@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>生命游戏2015</title>
+    <link href="src/bootstrap.min.css" rel="stylesheet" media="screen">
+   	<link rel="stylesheet" type="text/css" href="css/layout.css">
+   	<script src="src/jquery.js" type="text/javascript"></script>
+
+</head>
+
+
+<body>	
+	<div class="banner">生命游戏2015</div>
+	<div id="layout1">
+	<canvas id="myCanvas" height="500" width="500"></canvas>
+	<div id="right-container">
+		网格边长：<input type="number" id="size_of_map" min="10" max="100" value="30"/>
+		<br>刷新帧率：<input type="number" id="refresh_time" min="100" max="1000" value="200"/>
+		<br>细胞密度：<input type="number" id="cell_density" min="0" max="1" value="0.5"/></br>
+		<br>当前生存细胞数：</br>
+		<div class="livecells">0</div>
+		<p></p>
+		<button class="btn btn-lg btn-primary" onclick="draw()">畫格</button>
+    	<button class="btn btn-lg btn-success" style="margin-left:1%"  onclick="start()">启动</button>
+    	<button class="btn btn-lg btn-" style="margin-left:1%"  onclick="pauseGrow()">暂停</button>
+     	<button class="btn btn-lg btn-danger" style="margin-left:1%"  onclick="reset()">重设</button>
+	</div>
+	<div id="layout2">
+		<canvas id="blocks" height="500" width="500"></canvas>
+	</div>
+	</div>
+
+</body>
+
+   	<script src="src/jquery.js" type="text/javascript"></script>
+   	<script src="src/app.js" type="text/javascript"></script>
+
+</html>
